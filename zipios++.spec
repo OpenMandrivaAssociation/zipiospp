@@ -27,7 +27,7 @@ Patch0:		zipios++-0.1.5.9-suse-support-arches.patch
 Patch1:		zipios++-0.1.5.9-suse-fix-amd64.patch
 Patch2:		zipios++-0.1.5.9-suse-fix-gcc43.patch
 Patch3:		zipios++-0.1.5.9+cvs.2007.04.28-mdv-gcc46.patch
-BuildRequires:	zlib-devel libcppunit-devel doxygen ImageMagick
+BuildRequires:	zlib-devel libcppunit-devel doxygen imagemagick
 
 %description
 Zipios++ is a java.util.zip-like C++ library for reading and writing Zip files.
