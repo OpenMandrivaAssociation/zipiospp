@@ -85,3 +85,10 @@ rm -f %{buildroot}%{_libdir}/*.la
 %doc %dir doc/html/
 %{_includedir}/zipios++
 %{_libdir}/libzipios.so
+
+
+%changelog
+* Mon Jan 30 2012 Dmitry Mikhirev <dmikhirev@mandriva.org> 0.1.5.9+cvs.2007.04.28-1
++ Revision: 769742
+- imported package zipios++
+
