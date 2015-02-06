@@ -17,7 +17,7 @@
 
 Name:           zipios++
 Version:	0.1.5.9+cvs.2007.04.28
-Release:	1
+Release:	2
 License:	GPLv2
 Summary:	A java.util.zip-like C++ library for reading and writing Zip files
 Url:		http://zipios.sourceforge.net/
