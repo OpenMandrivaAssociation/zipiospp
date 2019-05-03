@@ -17,6 +17,7 @@ Source0:	https://github.com/Zipios/Zipios/archive/v%{version}.tar.gz
 
 BuildRequires:	cmake
 BuildRequires:  graphviz
+BuildRequires:  zlib-devel
 
 
 %description
