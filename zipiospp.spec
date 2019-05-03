@@ -4,6 +4,7 @@
 
 %define libname %mklibname zipios++ %{major}
 %define develname %mklibname zipios++ -d
+%bcond_with docs
 
 Name:           zipios++
 Version:        2.2.1.0
@@ -18,6 +19,9 @@ Source0:	https://github.com/Zipios/Zipios/archive/v%{version}.tar.gz
 BuildRequires:	cmake
 BuildRequires:  graphviz
 BuildRequires:  zlib-devel
+%if %{with docs}
+BuildRequires:	doxygen
+%endif
 
 
 %description
@@ -66,6 +70,9 @@ rm -rf %{buildroot}/%{_datadir}/doc/zipios/
 %{_bindir}/appendzip
 %{_bindir}/dosdatetime
 %{_bindir}/zipios
+%if %{with docs}
+%{_mandir}/man3/zipios*
+%endif
 
 %files -n %{libname}
 %{_libdir}/libzipios.so.%{major}
@@ -74,5 +81,4 @@ rm -rf %{buildroot}/%{_datadir}/doc/zipios/
 %files -n %{develname}
 %{_libdir}/*.so
 %{_includedir}/zipios
-%{_mandir}/man3/zipios*
 %{_datadir}/cmake/ZipIos/ZipIosConfig.cmake
