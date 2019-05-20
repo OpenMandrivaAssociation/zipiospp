@@ -18,7 +18,7 @@ Source0:	https://github.com/Zipios/Zipios/archive/v%{version}.tar.gz
 
 BuildRequires:	cmake
 BuildRequires:  graphviz
-BuildRequires:  zlib-devel
+BuildRequires:  pkgconfig(zlib)
 %if %{with docs}
 BuildRequires:	doxygen
 %endif
@@ -61,9 +61,8 @@ zipios++.
 %cmake
 %make_build
 
-
 %install
-%makeinstall_std -C build
+%make_install -C build
 rm -rf %{buildroot}/%{_datadir}/doc/zipios/
 
 %files
