@@ -7,8 +7,8 @@
 %bcond_with docs
 
 Name:           zipios++
-Version:        2.2.1.0
-Release:        1
+Version:	2.2.5.0
+Release:	1
 License:        LGPLv2+
 Summary:        C++ library for reading and writing Zip files
 Group:          Development/C++
