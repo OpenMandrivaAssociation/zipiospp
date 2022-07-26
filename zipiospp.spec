@@ -72,6 +72,7 @@ rm -rf %{buildroot}/%{_datadir}/doc/zipios/
 %if %{with docs}
 %{_mandir}/man3/zipios*
 %endif
+%{_datadir}/metainfo/zipios.metainfo.xml
 
 %files -n %{libname}
 %{_libdir}/libzipios.so.%{major}
