@@ -14,7 +14,7 @@ Summary:        C++ library for reading and writing Zip files
 Group:          Development/C++
 URL:            http://zipios.sourceforge.net/
 # Upstream is dead. Using updated Debian source as they are fixing FTBFS issues.
-Source0:	https://github.com/Zipios/Zipios/archive/v%{version}/%{name}-%{version}.tar.gz
+Source0:	https://github.com/Zipios/Zipios/archive/v%{version}/%{oname}-%{version}.tar.gz
 
 BuildRequires:	cmake
 BuildRequires:  graphviz
