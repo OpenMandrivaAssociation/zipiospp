@@ -15,11 +15,11 @@ Group:          Development/C++
 URL:            http://zipios.sourceforge.net/
 # Upstream is dead. Using updated Debian source as they are fixing FTBFS issues.
 Source0:	https://github.com/Zipios/Zipios/archive/v%{version}/%{oname}-%{version}.tar.gz
+Patch0:		https://github.com/Zipios/Zipios/commit/784078832121e78207f37bc85c5dcc04ede568e6.patch
 
 BuildRequires:	cmake ninja
 BuildRequires:  graphviz
 BuildRequires:  pkgconfig(zlib)
-BuildRequires:	recode locales-extra-charsets
 BuildRequires:	doxygen graphviz
 
 %description
@@ -54,11 +54,6 @@ zipios++.
 
 %prep
 %autosetup -p1 -n %{oname}-%{version}
-
-# The XML file is marked UTF-8, but contains an
-# ISO-8859-1 encoded umlaut
-recode iso8859-1 contrib/zipios.metainfo.xml.in
-
 %cmake -G Ninja
 
 %build

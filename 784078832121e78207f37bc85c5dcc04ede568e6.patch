@@ -1,0 +1,29 @@
+From 784078832121e78207f37bc85c5dcc04ede568e6 Mon Sep 17 00:00:00 2001
+From: AlexisWilke <alexis@m2osw.com>
+Date: Sun, 7 Mar 2021 08:21:50 -0800
+Subject: [PATCH] Fixed two ISO-8851-1 characters.
+
+Removed the inverted question mark.
+Changed the o umlaut to use UTF-8.
+---
+ contrib/zipios.metainfo.xml.in | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/contrib/zipios.metainfo.xml.in b/contrib/zipios.metainfo.xml.in
+index 5d29481..9b506d7 100644
+--- a/contrib/zipios.metainfo.xml.in
++++ b/contrib/zipios.metainfo.xml.in
+@@ -1,11 +1,11 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+-<!-- Copyright 2019 Severin Glöckner -->
++<!-- Copyright 2019 Severin GlÃ¶ckner -->
+ <component>
+   <id>zipios</id>
+   <name>Zipios</name>
+   <summary>Small C++ library for reading and writing zip files</summary>
+   <description>
+-    <p>Zipios is a small C++ library for reading and writing zip files. The structure and public interface are based (somewhat loosely) on the java.util.zip package. The streams created to access the individual entries in a zip file are based on the standard iostream library.</p>¿
++    <p>Zipios is a small C++ library for reading and writing zip files. The structure and public interface are based (somewhat loosely) on the java.util.zip package. The streams created to access the individual entries in a zip file are based on the standard iostream library.</p>
+     <p>Zipios also provides a way for an application to support files from multiple sources (e.g. from zip files or from ordinary directories) transparently.</p>
+   </description>
+   <metadata_license>CC0-1.0</metadata_license>
