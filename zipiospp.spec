@@ -12,7 +12,7 @@ Release:	2
 License:        LGPLv2+
 Summary:        C++ library for reading and writing Zip files
 Group:          Development/C++
-URL:            http://zipios.sourceforge.net/
+URL:            https://zipios.sourceforge.net/
 # Upstream is dead. Using updated Debian source as they are fixing FTBFS issues.
 Source0:	https://github.com/Zipios/Zipios/archive/v%{version}/%{oname}-%{version}.tar.gz
 Patch0:		https://github.com/Zipios/Zipios/commit/784078832121e78207f37bc85c5dcc04ede568e6.patch
